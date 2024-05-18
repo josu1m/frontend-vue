@@ -3,6 +3,8 @@ import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 import DashboardView from '../views/DashboardView.vue';
 import LoginView from '../views/LoginView.vue';
+import PruebaView from '../views/PruebaView.vue';
+
 
 // Importación dinámica para AboutView (corrección)
 const AboutView = () => import('../views/AboutView.vue');
@@ -30,6 +32,11 @@ const router = createRouter({
       path: '/login',
       name: 'login',
       component: LoginView
+    },
+    {
+      path: '/prueba',
+      name: 'prueba',
+      component: PruebaView
     },
   ]
 });
